@@ -1,0 +1,122 @@
+/* Basic reset for padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    position: relative; /* Make the body a positioning context */
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px; /* Adjust width as needed */
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar button {
+    width: 100%; /* Adjust button width as needed */
+    padding: 10px; /* Adjust padding as needed */
+    border: none; /* Removes the default border */
+    background-color: transparent; /* No background color */
+    color: #fff; /* White text color */
+    text-align: left; /* Align text to the left */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    display: flex; /* Allows for inline alignment of icons and text */
+    align-items: center; /* Vertically center items */
+}
+
+.sidebar button i {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.sidebar-bottom {
+    margin-top: auto; /* Pushes the container to the bottom */
+}
+
+/* Add hover effects for buttons */
+.sidebar button:hover {
+    background-color: #ddd; /* Darker shade on hover */
+    color: #000; /* Black text color on hover */
+    text-shadow: 0 0 0 #000; /* Override icon color to match text */
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 250px; /* Same as sidebar width */
+    padding: 20px;
+}
+
+#patientSearch {
+    width: 60%; /* Reduce width */
+    padding: 8px 15px; /* Reduce padding */
+    margin-bottom: 20px; /* Keep margin as it is */
+    font-size: 16px; /* Keep font size as it is */
+    display: block; /* Ensure it's block level for full-width */
+    border-radius: 20px; /* Add curved edges */
+}
+
+/* Table styles */
+.patients-table {
+    border: 1px solid black; /* Black outline around the table */
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full width */
+}
+
+.patients-table th,
+.patients-table td {
+    border-bottom: 1px solid #ddd; /* Light grey line to separate each row */
+    padding: 8px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+.patients-table th {
+    background-color: #f2f2f2; /* Light grey background for header */
+    font-weight: bold; /* Bold font for header */
+}
+
+.patients-table td {
+    background-color: #fff; /* White background for cells */
+}
+
+/* Button styles with hover effect */
+button {
+    padding: 12px 20px; /* Increase padding for larger size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #D4D2D3; /* Default button color */
+    color: #fff; /* Default text color */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #BFBEBE; /* Lighten the button color on hover */
+    color: #000; /* Change text color to black for contrast */
+}
+
+/* Positioning the welcome text */
+.welcome-back {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Adjust text color */
+    background-color: #fff; /* Adjust background color */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    z-index: 1; /* Ensure it's above other content */
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Keeps center alignment horizontally */
+  align-items: center; /* Keeps center alignment vertically */
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  display: flex; /* Apply Flexbox to container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center-align children */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure full width for center alignment */
+}
+
+input[type=email], input[type=password] {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.social-login {
+  display: flex;
+  justify-content: center; /* Center social buttons container */
+  margin: 20px 0;
+  width: 100%; /* Ensure full width */
+}
+
+.social-button {
+  width: 48%; /* Keep button width */
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin: 0 1%; /* Add small margin for spacing */
+}
+
+.social-button:hover {
+  background-color: #eee;
+}
+
+.terms {
+  font-size: 0.8em;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure full width for center alignment */
+}
+
+.signin-link {
+  text-align: center;
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9em;
+  width: 100%; /* Ensure full width for center alignment */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Medication</title>
+    <link rel="stylesheet" href="AdminAddMedication.css"> <!-- Assuming this is your stylesheet's name -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <!-- Sidebar content here, similar to your main content page -->
+</div>
+
+<div class="main-content">
+    <!-- Back button to go to PatientOverview.html -->
+    <button onclick="window.location.href='SpecificPatient.html'" class="button-back">
+        <i class="fas fa-arrow-left"></i> Back
+    </button>
+    <h2>Add Medication</h2>
+    <form id="addMedicationForm">
+        <div class="form-group">
+            <label for="medicationName">Medication Name:</label>
+            <input type="text" id="medicationName" name="medicationName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastTaken">Last Taken Medication:</label>
+            <input type="datetime-local" id="lastTaken" name="lastTaken">
+        </div>
+        <div class="form-group">
+            <label for="nextDue">Next Due:</label>
+            <input type="datetime-local" id="nextDue" name="nextDue" required>
+        </div>
+        <button type="submit" class="button">Add Medication</button>
+    </form>
+</div>
+
+</body>
+</html>

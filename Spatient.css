@@ -1,0 +1,117 @@
+/* Basic reset for padding and margin */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar button i {
+    margin-right: 10px;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+/* Hover effects for sidebar buttons */
+.sidebar button:hover {
+    background-color: #ddd;
+    color: #000;
+    text-shadow: 0 0 0 #000; /* Override icon color to match text */
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* Uniform styles for all buttons */
+.button, .button-back {
+    padding: 15px 35px; /* Uniform padding for same size */
+    font-size: 16px; /* Uniform font size */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    display: inline-block; /* Display inline for center alignment */
+    margin: 5px; /* Space around buttons */
+    text-align: center;
+}
+
+.button-red {
+    background-color: #d9534f; /* Red background for 'Remove Medication' button */
+    color: white; /* White text for contrast */
+}
+
+/* Hover effects for buttons */
+.button:hover, .button-back:hover {
+    background-color: #555; /* Darker on hover */
+    color: #ddd; /* Light text on hover */
+}
+
+/* Table styles */
+.patient-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+.patient-list th, .patient-list td {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    color: black;
+}
+
+.patient-list th {
+    background-color: #666;
+    color: white;
+    border-right: 1px solid black;
+}
+
+.patient-list th:last-child,
+.patient-list td:last-child {
+    border-right: none; /* Removes the right border for the last column */
+}
+
+.patient-list tr:hover {
+    background-color: #e9e9e9; /* Light grey background on hover */
+}
+
+/* Centering the buttons below the table */
+.button-container {
+    text-align: center; /* Centers the buttons */
+    margin-top: 20px; /* Space between the table and the buttons */
+}
