@@ -1,48 +1,42 @@
-/* Extending the base CSS with form-specific styles */
 
-/* Basic styling for form groups to ensure proper spacing */
 .form-group {
-    margin-bottom: 20px; /* Add space between form elements */
+    margin-bottom: 20px;
 }
 
-/* Styling for labels for accessibility and readability */
 label {
-    display: block; /* Make sure labels are on their own line */
-    margin-bottom: 5px; /* Space between the label and the input field */
-    font-weight: bold; /* Make labels stand out */
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
 }
 
-/* Uniform styling for input fields */
 input[type="text"],
 input[type="datetime-local"] {
-    width: 100%; /* Full width to match the form's width */
-    padding: 10px; /* Sufficient padding for typing comfort */
-    margin-bottom: 10px; /* Space below each input field */
-    border: 1px solid #ccc; /* Subtle border around input fields */
-    border-radius: 5px; /* Match the button border radius for consistency */
-    box-sizing: border-box; /* Box-sizing to include padding and border in the element's total width and height */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
 }
 
-/* Enhance the submit button appearance */
 button[type="submit"] {
     background-color: #434543;
-    color: white; /* White text color for contrast */
-    padding: 12px 20px; /* Padding to increase button size */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Cursor change to indicate clickable */
-    width: 100%; /* Full width for a more prominent button */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    width: 100%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 button[type="submit"]:hover {
-    background-color: #050505; /* Darken the button on hover for feedback */
+    background-color: #050505; 
 }
 
-/* Adjustments for better layout and spacing */
 .main-content {
-    max-width: 800px; /* Limit the content width for better readability */
-    margin: 0 auto; /* Center the content area */
-    padding: 20px; /* Add padding around the content */
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
 }
 
